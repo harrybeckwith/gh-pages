@@ -10,6 +10,7 @@ import Sites from "./pages/sites";
 import SingleSite from "./pages/single-site";
 import Projects from "./pages/projects";
 import SingleProject from "./pages/single-project";
+import Gallery from "./pages/gallery";
 import "./styles/base.scss";
 
 const routing = (
@@ -23,6 +24,7 @@ const routing = (
             <Route path="/single-site:current" component={SingleSite} />
             <Route path="/projects" component={Projects} />
             <Route path="/single-project:current" component={SingleProject} />
+            <Route path="/gallery" component={Gallery} />
 
         </div>
 

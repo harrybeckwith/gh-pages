@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 class Header extends React.Component {
 
   state = {
-    activeMenu: true
+    activeMenu: false
   }
 
   toggleMenu = () => {

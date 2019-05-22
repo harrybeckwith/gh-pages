@@ -1,8 +1,7 @@
 import React from 'react';
 import "../styles/gallery.scss";
-import Layout from '../components/MyLayout.js'
-import Crotia from '../static/gallery/croatia';
-import Corsica from '../static/gallery/corsica';
+import Crotia from '../gallery/croatia';
+import Corsica from '../gallery/corsica';
 
 class Gallery extends React.Component {
     state = {
@@ -65,7 +64,7 @@ class Gallery extends React.Component {
 
     render() {
         return (
-            <Layout>
+            <React.Fragment>
                 <div className={`lightbox__bg ${this.state.active ? 'show' : 'hide'}`} onClick={this.hideLb}>
 
                 </div>
@@ -93,14 +92,14 @@ class Gallery extends React.Component {
                     </div>
                 </div>
                 <div className={`${this.state.active ? 'show' : 'hide'}`}>
-                    <img className="lightbox__close" src="static/images/lightbox/close.svg" onClick={this.hideLb} />
-                    <img className="lightbox__arrow lightbox__arrow--prev" src="static/images/lightbox/prev.svg" onClick={this.prev} />
+                    <img className="lightbox__close" src="/images/lightbox/close.svg" onClick={this.hideLb} />
+                    <img className="lightbox__arrow lightbox__arrow--prev" src="/images/lightbox/prev.svg" onClick={this.prev} />
                     <img className={`lightbox__img ${this.state.active ? 'show' : 'hide'}`} src={this.state.gallery[this.state.current].lightbox} alt={this.state.current.alt} />
                     <p className="lightbox__caption">{this.state.gallery[this.state.current].caption}</p>
-                    <img className="lightbox__arrow lightbox__arrow--next" src="static/images/lightbox/next.svg" onClick={this.next} />
+                    <img className="lightbox__arrow lightbox__arrow--next" src="/images/lightbox/next.svg" onClick={this.next} />
                 </div>
 
-                </Layout>
+            </React.Fragment>
         )
     }
 
