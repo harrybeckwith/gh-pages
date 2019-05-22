@@ -1,0 +1,56 @@
+.front {
+    display:flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+    &__card {
+        width: 100%;
+        margin-bottom: map-get($spacing, 8);
+        cursor: pointer;
+
+        @include breakpoint-min(sm) {
+            width: 46.5%;
+            margin-right: 7%;
+
+            &:nth-child(2) {
+                margin-right: 0%;
+            }
+        }
+
+        @include breakpoint-min(md) {
+            width: 21.6%;
+            margin-right: 4.5%;
+
+            &:nth-child(2) {
+                margin-right: 4.5%;
+            }
+
+            &:nth-child(4) {
+                margin-right: 0%;
+            }
+
+        }
+
+  
+
+        &__group {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+
+            p {
+                margin-left: 2px;
+            }
+        }
+    }
+
+    &__img {
+        width: 100%;
+        margin-bottom: map-get($spacing, 2);
+    }
+
+    &__content  * {
+
+        margin-bottom: map-get($spacing, 5);
+    }
+}

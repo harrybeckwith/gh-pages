@@ -1,0 +1,211 @@
+.header {
+  padding-top: 6%;
+  padding-bottom: 6%;
+
+  &__title {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-top: 1px solid map-get($colors, grey-light);
+  background-color: #fff;
+
+  @include breakpoint-min(sm) {
+    justify-content: space-between;
+    padding: 0;
+    border: none;
+    background-color: unset;
+  }
+
+  &__title {
+    text-transform: capitalize;
+    font-size: map-get($fontSize, 3xs);
+  }
+
+  &__toggle {
+    width: 20px;
+    cursor: pointer;
+    transition: map-get($transitions, fast);
+
+    &:hover {
+      opacity: 0.4;
+    }
+  }
+
+  .menu__icons {
+    margin-top: 0;
+    &__icon {
+      width: 18px;
+      margin-left: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+     
+    }
+  }
+}
+
+.menu {
+  font-size: 50px;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow: scroll;
+  transform: translatex(-35%);
+  transition: transform 300ms cubic-bezier(0.5, 0, 0, 1),
+    opacity 200ms 0ms linear, visibility 0ms 350ms linear,
+    margin 0ms 350ms linear;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 50;
+
+  &__nav {
+    border-bottom: 1px solid map-get($colors, grey-light);
+    padding-bottom: map-get($spacing, 5);
+    padding-top: map-get($spacing, 5);
+    transition: map-get($transitions, fast);
+
+    &__active {
+      color: map-get($colors, secondary) !important;
+    }
+
+    @include breakpoint-min(sm) {
+      border-bottom: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    a {
+      font-size: map-get($fontSize, sm);
+      text-decoration: none;
+      color: map-get($colors, base);
+      text-transform: capitalize;
+      display: block;
+      padding-top: map-get($spacing, 2);
+      padding-bottom: map-get($spacing, 2);
+      transition: map-get($transitions, fast);
+
+      &:hover {
+        color: map-get($colors, secondary);
+      }
+    }
+  }
+
+  &__about {
+    padding-top: map-get($spacing, 8);
+
+    @include breakpoint-min(sm) {
+      padding-top: 0;
+    }
+  }
+
+  &__about,
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include breakpoint-min(sm) {
+      margin-top: 0;
+      width: 50%;
+      height: 100vh;
+      border-right: 1px solid map-get($colors, grey-light);
+    }
+  }
+
+  &__about {
+    border-top: 1px solid map-get($colors, grey-light);
+
+    @include breakpoint-min(sm) {
+      border-top: 0;
+    }
+    &__inside {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  &__container {
+    @include breakpoint-min(sm) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    font-size: map-get($fontSize, 3xs);
+  }
+
+  &__desc {
+    font-size: map-get($fontSize, 3xs);
+    text-align: center;
+    line-height: map-get($lineHeight, normal);
+    max-width: 80%;
+
+    @include breakpoint-min(md) {
+      max-width: 343px;
+    }
+  }
+
+  &__avatar {
+    border-radius: 50%;
+    width: 120px;
+  }
+
+  &__icons {
+    &__icon {
+      width: 25px;
+      margin-right: 20px;
+      transition: map-get($transitions, fast);
+
+      &:hover {
+        opacity: 0.4;
+      }
+    }
+  }
+
+  &__title,
+  &__desc,
+  &__icons {
+    margin-top: map-get($spacing, 3);
+  }
+}
+
+.active-menu {
+  .menu {
+    transition: transform 250ms cubic-bezier(0.42, 0, 0.12, 1),
+      opacity 100ms linear, visibility 0ms 0ms linear;
+    width: 100%;
+    transform: translatex(0);
+    opacity: 1;
+    visibility: visible;
+
+    @include breakpoint-min(sm) {
+      width: 70%;
+    }
+  }
+
+  .header__title {
+    display: none;
+  }
+
+  .top-bar {
+    .title--md {
+      display: none;
+    }
+  }
+}

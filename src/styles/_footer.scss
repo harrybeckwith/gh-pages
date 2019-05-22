@@ -1,0 +1,56 @@
+.footer {
+  padding-top: map-get($spacing, 8);
+  margin-top: map-get($spacing, 10);
+  padding-bottom: map-get($spacing, 8);
+  border-top: 1px solid map-get($colors, grey-light);
+
+  &__inside {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__icons {
+    margin-top: 0;
+    width: 18px;
+
+    a {
+      margin-right: 10px;
+    }
+  }
+
+  &__links,
+  &__icons,
+  &__note {
+    display: flex;
+    margin-bottom: map-get($spacing, 8);
+  }
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    a {
+      display: block;
+      padding: map-get($spacing, 1) map-get($spacing, 3);
+      font-size: map-get($fontSize, md);
+      color: map-get($colors, grey);
+
+      @include breakpoint-min(sm) {
+        padding: 0 map-get($spacing, 3);
+      }
+
+      &:hover {
+        color: map-get($colors, primary);
+      }
+    }
+  }
+
+  &__note,
+  &__links {
+    a {
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.title {
+  &__underline {
+    border-bottom: solid 1px #000;
+    padding: 0 0 10px;
+    display:inline-block;
+    
+
+    &__sm {
+       &:after {
+         content: "";
+         width: 30px;
+         height: 1px;
+         background-color: map-get($colors, grey);
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         margin-top: 20px;
+       }
+    }
+  }
+
+  &--md {
+    font-size: map-get($fontSize, sm);
+  }
+
+  &__sm-only {
+    display: inline-block;
+    @include breakpoint-min(sm) {
+      display: none;
+    }
+  }
+
+  &__md-only {
+    display: none;
+    @include breakpoint-min(sm) {
+      display: block;
+    }
+  }
+}
+
+.hl {
+  color: map-get($colors, secondary);
+}

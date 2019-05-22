@@ -1,0 +1,15 @@
+.text {
+    &__sm {
+        font-size: map-get($fontSize, 6xs);
+        font-family: 'Open Sans', sans-serif;
+
+    }
+
+    &__light {
+        color: map-get($colors, grey-mid);
+    }
+
+    &__large {
+
+    }
+}

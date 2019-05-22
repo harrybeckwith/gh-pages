@@ -1,0 +1,36 @@
+.home {
+  &__content {
+    @include breakpoint-min(sm) {
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__title {
+      @include breakpoint-min(sm) {
+        width: 48%;
+      }
+
+      font-size: 20px;
+    }
+  }
+
+  &__content,
+  &__img {
+    width: 900px;
+    max-width: 100%;
+  }
+
+  &__img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  &__link {
+    text-decoration: underline;
+    margin-left: 5px;
+  }
+}

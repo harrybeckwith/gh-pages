@@ -1,0 +1,100 @@
+@function map-deep-get($map, $keys...) {
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
+}
+
+$breakpoints: (
+  xs: 480,
+  sm: 768,
+  md: 1024,
+  lg: 1200
+);
+
+$fontSize: (
+  // All font sizes are calculated based on 1rem = 10px
+  6xs: 0.8rem,
+  5xs: 0.9rem,
+  4xs: 1rem,
+    3xs: 1.1rem,
+  2xs: 1.2rem,
+  xs: 1.3rem,
+  sm: 1.4rem,
+  base: 1.6rem,
+  lg: 1.7rem,
+  xl: 1.8rem,
+  2xl: 2.2rem,
+  3xl: 2.4rem,
+  4xl: 2.6rem,
+  5xl: 2.8rem,
+  6xl: 3rem,
+  7xl: 4rem
+);
+
+$lineHeight: (
+  none: 1,
+  tight: 1.25,
+  normal: 1.5
+);
+
+$fontWeight: (
+  normal: 300,
+  bold: 700
+);
+
+$letterSpacing: (
+  tight: -0.08em,
+  normal: 0,
+  wide: 0.08em
+);
+
+$colors: (
+  primary: #333,
+  secondary: #fd885d,
+  grey: #aaa,
+  grey-light: #f0f0f0,
+  grey-mid: #bbb,
+  base: #333
+);
+
+$borderRadius: (
+  sm: 0.4rem,
+  default: 1.2rem,
+  lg: 3.2rem,
+  full: 9999px
+);
+
+$spacing: (
+  // All spacing sizes are calculated based on 1rem = 10px
+    px: 1px,
+  1: 0.4rem,
+  2: 0.8rem,
+  3: 1.2rem,
+  4: 1.6rem,
+  5: 2rem,
+  6: 2.4rem,
+  8: 3.2rem,
+  10: 4rem,
+  12: 4.8rem,
+  16: 6.4rem,
+  20: 8rem,
+  24: 9.6rem,
+  32: 12.8rem
+);
+
+$zIndex: (
+  auto: auto,
+  min: 0,
+  1: 10,
+  2: 20,
+  3: 30,
+  4: 40,
+  max: 50
+);
+
+$transitions: (
+  base: ease 0.35s,
+  fast: ease 0.15s,
+  slow: ease 0.55s
+);

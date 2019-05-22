@@ -1,0 +1,35 @@
+
+@mixin breakpoint-min($breakpoint) {
+    $queryValue: map-get($breakpoints, $breakpoint);
+  
+    @if ($queryValue==false) {
+      @error 'Breakpoint "#{$breakpoint}" doesn\'t exist. Available breakpoints are: #{map-keys($breakpoints)}';
+    }
+  
+    @media (min-width: #{$queryValue}px) {
+      @content;
+    }
+  }
+  
+  /*  ==========================================================================
+      breakpoint-max -
+      This mixin allows us to use specific breakpoints
+      defined in our variables, and generate the correct
+      (max-width) media query required
+  =========================================================================== */
+  
+  @mixin breakpoint-max($breakpoint) {
+    $nextBreakpoint: map-get-next($breakpoints, $breakpoint);
+  
+    @if ($nextBreakpoint != false) {
+      @if (map-has-key($breakpoints, $breakpoint) == false) {
+        @error 'Breakpoint "#{$breakpoint}" doesn\'t exist. Available breakpoints are: #{map-keys($breakpoints)}';
+      }
+  
+      $queryValue: $nextBreakpoint - 1;
+  
+      @media (max-width: #{$queryValue}px) {
+        @content;
+      }
+    }
+  }
