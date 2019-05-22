@@ -7,6 +7,9 @@ import * as serviceWorker from './serviceWorker';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Sites from "./pages/sites";
+import SingleSite from "./pages/single-site";
+import Projects from "./pages/projects";
+import SingleProject from "./pages/single-project";
 import "./styles/base.scss";
 
 const routing = (
@@ -14,7 +17,10 @@ const routing = (
         <div>
             <Header />
             <Route exact path="/" component={App} />
-            <Route exact path="/sites" component={Sites} />
+            <Route path="/sites" component={Sites} />
+            <Route path="/single-site:current" component={SingleSite} />
+            <Route path="/projects" component={Projects} />
+            <Route path="/single-project:current" component={SingleProject} />
 
 
 

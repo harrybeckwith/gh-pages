@@ -12,14 +12,9 @@ class Index extends React.Component {
 
   cardClick = (current) => {
 
-    // Route.push({
-    //   pathname: '/single-site',
-    //   query: { current }
-    // })
+    this.props.history.push(`/single-site${current}`)
 
 
-
-    this.props.history.push(`/single-site:${current}`)
   }
 
   render() {
@@ -29,6 +24,8 @@ class Index extends React.Component {
       <div className="front">
 
         {this.state.sites.main.map((item, index) => (
+
+
 
           <Front info={item.front} key={index} curr={index} cardClick={this.cardClick} />
         ))}

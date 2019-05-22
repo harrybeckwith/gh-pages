@@ -8,8 +8,10 @@ class SingleSite extends React.Component {
   };
 
   componentWillMount() {
+
+    const { current } = this.props.match.params
     this.setState({
-      content: this.state.sites.main[this.props.url.query.current].content
+      content: this.state.sites.main[current].content
     });
   }
 
@@ -17,6 +19,7 @@ class SingleSite extends React.Component {
     return (
       <div className="overview">
         <div className="overview__container">
+          a
           <div
             className="overview__img"
             style={{ backgroundImage: `url(${this.state.content.largeImg})` }}

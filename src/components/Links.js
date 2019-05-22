@@ -5,10 +5,10 @@ const Links = () => {
   return (
     <React.Fragment>
 
-      <Link to="/"><a>Home</a></Link>
-      <Link to="/sites"><a>Sites</a></Link>
-      <Link to="/projects"><a>projects</a></Link>
-      <Link to="/gallery"><a>gallery</a></Link>
+      <Link to="/">Home</Link>
+      <Link to="/sites">Sites</Link>
+      <Link to="/projects">projects</Link>
+      <Link to="/gallery">gallery</Link>
 
     </React.Fragment>
   );

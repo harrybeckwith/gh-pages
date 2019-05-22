@@ -1,8 +1,6 @@
 import React from 'react';
-import Layout from "../components/MyLayout.js";
-import projects from "../static/content/projects.json";
+import projects from "../content/projects.json";
 import Front from '../components/Front.js';
-import Router from "next/router";
 
 class Index extends React.Component {
   state = {
@@ -13,27 +11,21 @@ class Index extends React.Component {
 
   cardClick = (current) => {
 
-    Router.push({
-      pathname: '/single-project',
-      query: { current }
-    })
+    this.props.history.push(`/single-project${current}`)
   }
 
   render() {
 
     return (
-      <Layout>
 
-        <div className="front">
+      <div className="front">
 
-          {this.state.projects.main.map((item, index) => (
+        {this.state.projects.main.map((item, index) => (
 
-            <Front info={item.front} key={index} curr={index} cardClick={this.cardClick} />
-          ))}
+          <Front info={item.front} key={index} curr={index} cardClick={this.cardClick} />
+        ))}
 
-        </div>
-
-      </Layout>
+      </div>
     );
   }
 }
