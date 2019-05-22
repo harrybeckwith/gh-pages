@@ -1,14 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
 
 const Links = () => {
   return (
     <React.Fragment>
 
-      <Link to="/">Home</Link>
-      <Link to="/sites">Sites</Link>
-      <Link to="/projects">projects</Link>
-      <Link to="/gallery">gallery</Link>
+      <NavLink exact activeClassName='menu__nav__active' to="/">Home</NavLink>
+      <NavLink activeClassName='menu__nav__active' to="/sites">Sites</NavLink>
+      <NavLink activeClassName='menu__nav__active' to="/projects">projects</NavLink>
+      <NavLink activeClassName='menu__nav__active' to="/gallery">gallery</NavLink>
 
     </React.Fragment>
   );

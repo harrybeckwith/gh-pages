@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
+import { Route, BrowserRouter as Router } from 'react-router-dom'
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
@@ -14,19 +14,21 @@ import "./styles/base.scss";
 
 const routing = (
     <Router>
-        <div>
-            <Header />
+
+        <Header />
+
+        <div className="container">
             <Route exact path="/" component={App} />
             <Route path="/sites" component={Sites} />
             <Route path="/single-site:current" component={SingleSite} />
             <Route path="/projects" component={Projects} />
             <Route path="/single-project:current" component={SingleProject} />
 
-
-
-
-            <Footer />
         </div>
+
+
+        <Footer />
+
     </Router >
 )
 

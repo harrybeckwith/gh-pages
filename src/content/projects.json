@@ -80,7 +80,7 @@
         ]
       },
       "content": {
-        "largeImg": "//images/gallery/croatia/4.jpg",
+        "largeImg": "/images/gallery/croatia/4.jpg",
         "title": "portfolio",
         "topContent": [
           "Using React JavaScript library to create this portfolio website. Combining react knowledge to make use of server rendering,  exporting and routing. Building in a component based way approach, making use of state and passing data as props. Storing content in json files to make use of component based templates, so components can be re used."

@@ -9,7 +9,7 @@ const SocialIcons = () => {
       >
         <img
           className="menu__icons__icon"
-          src="/static/icons/instagram-logo.svg"
+          src="/icons/instagram-logo.svg"
           alt="instagram logo"
         />
       </a>
@@ -19,7 +19,7 @@ const SocialIcons = () => {
       >
         <img
           className="menu__icons__icon"
-          src="/static/icons/github-logo.svg"
+          src="/icons/github-logo.svg"
           alt="github logo"
         />
       </a>
@@ -29,7 +29,7 @@ const SocialIcons = () => {
       >
         <img
           className="menu__icons__icon"
-          src="/static/icons/medium-logo.svg"
+          src="/icons/medium-logo.svg"
           alt="medium logo"
         />
       </a>

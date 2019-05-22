@@ -19,7 +19,6 @@ class SingleSite extends React.Component {
     return (
       <div className="overview">
         <div className="overview__container">
-          a
           <div
             className="overview__img"
             style={{ backgroundImage: `url(${this.state.content.largeImg})` }}
