@@ -22,7 +22,7 @@ const SocialIcons = () => {
       >
         <img
           className="menu__icons__icon"
-          src="/icons/github-logo.svg"
+          src="./icons/github-logo.svg"
           alt="github logo"
         />
       </a>
@@ -32,7 +32,7 @@ const SocialIcons = () => {
       >
         <img
           className="menu__icons__icon"
-          src="/icons/medium-logo.svg"
+          src="./icons/medium-logo.svg"
           alt="medium logo"
         />
       </a>
