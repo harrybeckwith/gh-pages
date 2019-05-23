@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "harrybeckwith.github.io/static/css/main.e2dc52ad.chunk.css",
-    "main.js": "harrybeckwith.github.io/static/js/main.8e09218c.chunk.js",
-    "main.js.map": "harrybeckwith.github.io/static/js/main.8e09218c.chunk.js.map",
-    "runtime~main.js": "harrybeckwith.github.io/static/js/runtime~main.e059bca6.js",
-    "runtime~main.js.map": "harrybeckwith.github.io/static/js/runtime~main.e059bca6.js.map",
-    "static/js/2.5e7d1381.chunk.js": "harrybeckwith.github.io/static/js/2.5e7d1381.chunk.js",
-    "static/js/2.5e7d1381.chunk.js.map": "harrybeckwith.github.io/static/js/2.5e7d1381.chunk.js.map",
-    "index.html": "harrybeckwith.github.io/index.html",
-    "precache-manifest.f03b50c5b174b9d2e527365fc8463cc6.js": "harrybeckwith.github.io/precache-manifest.f03b50c5b174b9d2e527365fc8463cc6.js",
-    "service-worker.js": "harrybeckwith.github.io/service-worker.js",
-    "static/css/main.e2dc52ad.chunk.css.map": "harrybeckwith.github.io/static/css/main.e2dc52ad.chunk.css.map"
+    "main.css": "/gh-pages/static/css/main.e2dc52ad.chunk.css",
+    "main.js": "/gh-pages/static/js/main.fe936565.chunk.js",
+    "main.js.map": "/gh-pages/static/js/main.fe936565.chunk.js.map",
+    "runtime~main.js": "/gh-pages/static/js/runtime~main.dcaf1b57.js",
+    "runtime~main.js.map": "/gh-pages/static/js/runtime~main.dcaf1b57.js.map",
+    "static/js/2.5e7d1381.chunk.js": "/gh-pages/static/js/2.5e7d1381.chunk.js",
+    "static/js/2.5e7d1381.chunk.js.map": "/gh-pages/static/js/2.5e7d1381.chunk.js.map",
+    "index.html": "/gh-pages/index.html",
+    "precache-manifest.4ba8a1a5cea7cf12da5a0fa3a4f3b361.js": "/gh-pages/precache-manifest.4ba8a1a5cea7cf12da5a0fa3a4f3b361.js",
+    "service-worker.js": "/gh-pages/service-worker.js",
+    "static/css/main.e2dc52ad.chunk.css.map": "/gh-pages/static/css/main.e2dc52ad.chunk.css.map"
   }
 }
