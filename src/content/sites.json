@@ -3,7 +3,7 @@
     {
       "front": {
         "title": "River Island",
-        "thumbNail": "./images/sites/riverisland.png",
+        "thumbNail": "/port/images/sites/riverisland.png",
         "date": "March 2018",
         "tag": [
           "cms",
@@ -12,7 +12,7 @@
         ]
       },
       "content": {
-        "largeImg": "./images/sites/riverisland.png",
+        "largeImg": "/port/images/sites/riverisland.png",
         "title": "River Island",
         "topContent": [
           "Working on the front end development and maintenance of www.riverisland.com. Working with the team to develop the website in line with business prioritisation. Creating a pixel perfect experiences across browsers and devices."
@@ -36,7 +36,7 @@
     {
       "front": {
         "title": "horse racing",
-        "thumbNail": "./images/sites/horseracing.png",
+        "thumbNail": "/port/images/sites/horseracing.png",
         "date": "June 2018",
         "tag": [
           "racing",
@@ -44,7 +44,7 @@
         ]
       },
       "content": {
-        "largeImg": "./images/sites/horseracing.png",
+        "largeImg": "/port/images/sites/horseracing.png",
         "title": "horse racing",
         "topContent": [
           "Using html, sass, javaScript, php and vue js to create a unique looking website. Working as part of the front end development team at iTech Media within an agile enviroment. Making use of vue js by adding to certain components that use external data using axios to reach out to api's."
@@ -68,7 +68,7 @@
     {
       "front": {
         "title": "online betting",
-        "thumbNail": "./images/sites/onlinebetting.png",
+        "thumbNail": "/port/images/sites/onlinebetting.png",
         "date": "oct 2018",
         "tag": [
           "sports",
@@ -76,7 +76,7 @@
         ]
       },
       "content": {
-        "largeImg": "./images/sites/onlinebetting.png",
+        "largeImg": "/port/images/sites/onlinebetting.png",
         "title": "online betting",
         "topContent": [
           "Using html, sass, javaScript, php and vue js to create a unique looking website. Working as part of the front end development team at iTech Media within an agile enviroment. Making use of vue js by adding to certain components that use external data using axios to reach out to api's."
