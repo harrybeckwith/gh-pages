@@ -11,7 +11,7 @@ const SocialIcons = () => {
       >
         <img
           className="menu__icons__icon"
-          src="./images/icons/instagram-logo.svg"
+          src="./icons/instagram-logo.svg"
           alt="instagram logo"
         />
 
