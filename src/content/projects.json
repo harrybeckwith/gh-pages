@@ -3,7 +3,7 @@
     {
       "front": {
         "title": "odds of tube delay",
-        "thumbNail": "../images/projects/train.png",
+        "thumbNail": "/port/images/projects/train.png",
         "date": "April 2019",
         "tag": [
           "ES6",

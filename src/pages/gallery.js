@@ -79,7 +79,7 @@ class Gallery extends React.Component {
 
                                 <div
                                     className="thumbnails__thumbnail"
-                                    style={{ backgroundImage: `url(${process.env.PUBLIC_URL / item.thumbnail})` }}
+                                    style={{ backgroundImage: `url(${item.thumbnail})` }}
                                     key={index}
                                     onClick={() => this.imageClick(index)} >
 
