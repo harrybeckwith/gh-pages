@@ -5,7 +5,7 @@ const Links = () => {
   return (
     <React.Fragment>
 
-      <NavLink exact activeClassName='menu__nav__active' to="/">Home</NavLink>
+      <NavLink exact activeClassName='menu__nav__active' to="/port">Home</NavLink>
       <NavLink activeClassName='menu__nav__active' to="/sites">Sites</NavLink>
       <NavLink activeClassName='menu__nav__active' to="/projects">projects</NavLink>
       <NavLink activeClassName='menu__nav__active' to="/gallery">gallery</NavLink>

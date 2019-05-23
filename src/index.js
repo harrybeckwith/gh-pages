@@ -17,7 +17,7 @@ const routing = (
     <Router>
         <Header />
         <div className="container">
-            <Route exact path="/" component={App} />
+            <Route exact path="/port" component={App} />
             <Route path="/sites" component={Sites} />
             <Route path="/single-site:current" component={SingleSite} />
             <Route path="/projects" component={Projects} />
