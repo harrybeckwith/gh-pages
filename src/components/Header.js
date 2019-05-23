@@ -54,7 +54,7 @@ class Header extends React.Component {
               <div className="menu__about__inside">
                 <img
                   className="menu__avatar"
-                  src="/images/avatar.png"
+                  src="/port/images/avatar.png"
                   alt="avatar"
                 />
                 <h3 className="menu__title">Hi.</h3>
