@@ -3,8 +3,6 @@ import React from 'react';
 const SocialIcons = () => {
   return (
     <React.Fragment>
-
-      aass
       <a
         href="https://www.instagram.com/harry_j_beckwith/?hl=en"
         target="_blank"

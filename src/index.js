@@ -23,7 +23,6 @@ const routing = (
             <Route path="/projects" component={Projects} />
             <Route path="/single-project:current" component={SingleProject} />
             <Route path="/gallery" component={Gallery} />
-
         </div>
         <Footer />
     </Router >
