@@ -15,9 +15,7 @@ import "./styles/base.scss";
 
 const routing = (
     <Router>
-
         <Header />
-
         <div className="container">
             <Route exact path="/" component={App} />
             <Route path="/sites" component={Sites} />
@@ -27,10 +25,7 @@ const routing = (
             <Route path="/gallery" component={Gallery} />
 
         </div>
-
-
         <Footer />
-
     </Router >
 )
 

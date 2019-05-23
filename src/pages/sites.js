@@ -25,8 +25,6 @@ class Index extends React.Component {
 
         {this.state.sites.main.map((item, index) => (
 
-
-
           <Front info={item.front} key={index} curr={index} cardClick={this.cardClick} />
         ))}
 

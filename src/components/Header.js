@@ -31,8 +31,8 @@ class Header extends React.Component {
                 className="top-bar__toggle"
                 src={`${
                   this.state.activeMenu
-                    ? "/icons/close.svg"
-                    : "/icons/menu.svg"
+                    ? "./icons/close.svg"
+                    : "./icons/menu.svg"
                   }`}
                 alt="menu-icon"
               />

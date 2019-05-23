@@ -8,7 +8,7 @@ const Index = () => {
       <div className="home">
         <img
           class="home__img"
-          src="/static/images/gallery/croatia/4.jpg"
+          src="./images/gallery/croatia/4.jpg"
           alt=""
         />
         <div className="home__content">
