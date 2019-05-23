@@ -12,9 +12,7 @@ const Footer = () => {
           </div>
           <div className="footer__note">
             <p>
-              <a href="https://harrybeckwith.github.io/" target="_blank">
-                Created by <span className="hl">harry beckwith</span>
-              </a>
+              Created by <span className="hl">harry beckwith</span>
             </p>
           </div>
           <div className="footer__links">
