@@ -21,16 +21,16 @@ class SingleSite extends React.Component {
 
   render() {
     let links;
+
     if (this.state.content.links) {
       links = this.state.content.links.map((item, index) => (
         <a key={index} href={item.link} target="_blank" className="overview__links__link">{item.text}</a>
       ))
     }
-    let internalLink;
 
     if (this.state.content.linksInernal) {
 
-      internalLink = this.state.content.linksInernal.map((item, index) => (
+      links = this.state.content.linksInernal.map((item, index) => (
         <NavLink to={`${item.link}`}>{item.text}</NavLink>
       ))
 
@@ -73,14 +73,9 @@ class SingleSite extends React.Component {
               ))}
             </ul>
 
-            <h2 className="overview__title--md title--md">
-              {this.state.content.titleThree}
-            </h2>
-
             <div className="overview__links">
               <h2 className="overview__title--md title--md">links</h2>
               {links}
-              {internalLink}
             </div>
 
           </div>
