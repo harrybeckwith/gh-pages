@@ -11,7 +11,13 @@ import SingleSite from "./pages/single-site";
 import Projects from "./pages/projects";
 import SingleProject from "./pages/single-project";
 import Gallery from "./pages/gallery";
+import Budget from "./pages/budget";
 import "./styles/base.scss";
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import reducer from './store/reducer';
+
+const store = createStore(reducer);
 
 const routing = (
     <Router>
@@ -23,12 +29,13 @@ const routing = (
             <Route path="/projects" component={Projects} />
             <Route path="/single-project:current" component={SingleProject} />
             <Route path="/gallery" component={Gallery} />
+            <Route path="/budget" component={Budget} />
         </div>
         <Footer />
     </Router >
 )
 
-ReactDOM.render(routing, document.getElementById('root'));
+ReactDOM.render(<Provider store={store}>{routing}</Provider>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

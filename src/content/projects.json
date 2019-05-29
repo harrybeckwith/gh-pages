@@ -37,6 +37,37 @@
     },
     {
       "front": {
+        "title": "Budget calculator",
+        "thumbNail": "/port/images/projects/budget.png",
+        "date": "May 2019",
+        "tag": [
+          "React",
+          "Redux",
+          "Javascript"
+        ]
+      },
+      "content": {
+        "largeImg": "/port/images/projects/budget.png",
+        "title": "Budget Calculator",
+        "topContent": [
+          "Creating a budget calculator using React and Redux state managment to keep state central to the application. Users can add an income or expense state handles the calculations. Items can be removed again updating the state through maping the state and dispatching functions to the store to perform a reducer."
+        ],
+        "titleTwo": "code used",
+        "code": [
+          "React",
+          "Redux",
+          "Javascript"
+        ],
+        "linksInernal": [
+          {
+            "link": "/budget",
+            "text": "Budget app"
+          }
+        ]
+      }
+    },
+    {
+      "front": {
         "title": "lightbox",
         "thumbNail": "/port/images/projects/lightboxV.png",
         "date": "December 2019",

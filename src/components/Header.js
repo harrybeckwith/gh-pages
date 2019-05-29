@@ -2,35 +2,36 @@ import React from 'react';
 import SocialIcons from '../components/SocialIcons';
 import Links from '../components/Links';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 class Header extends React.Component {
 
-  state = {
-    activeMenu: false
-  }
+  // state = {
+  //   activeMenu: false
+  // }
 
-  toggleMenu = () => {
-    this.setState({
-      activeMenu: !this.state.activeMenu
-    })
+  // toggleMenu = () => {
+  //   this.setState({
+  //     activeMenu: !this.state.activeMenu
+  //   })
 
-  }
+  // }
 
   render() {
 
     return (
-      <header className={`header ${this.state.activeMenu ? "active-menu" : ""}`}>
+      <header className={`header ${this.props.activeMenu ? "active-menu" : ""}`}>
         <h3 className="title__underline title--md title__sm-only header__title">
           Code:
-      </h3>
+        </h3>
         <div className="container-fixed">
           <div className="container">
             <div className="top-bar">
               <img
-                onClick={this.toggleMenu}
+                onClick={this.props.toggleMenu}
                 className="top-bar__toggle"
                 src={`${
-                  this.state.activeMenu
+                  this.props.activeMenu
                     ? "/port/icons/close.svg"
                     : "/port/icons/menu.svg"
                   }`}
@@ -75,4 +76,17 @@ class Header extends React.Component {
   }
 }
 
-export default Header;
+const mapStateToProps = state => {
+  return {
+    activeMenu: state.activeMenu
+  };
+};
+
+
+const mapDispatchToProps = dispatch => {
+  return {
+    toggleMenu: () => dispatch({ type: 'TOGGLE_MENU' }),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
