@@ -33,7 +33,7 @@
   
   .top {
     height: 40vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/images/projects/back.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/port/images/projects/back.png);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -196,14 +196,7 @@
   
   }
   
-  
-  h2 {
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 15px;
-  }
-  
+
   .icome__title { color: #28B9B5; }
   .expenses__title { color: #FF5049; }
   

@@ -48,7 +48,7 @@ class Header extends React.Component {
         </div>
         <div className="menu">
           <div className="menu__container">
-            <nav className="menu__nav" onClick={this.toggleMenu}>
+            <nav className="menu__nav" onClick={this.props.toggleMenu}>
               <Links />
             </nav>
             <div className="menu__about">
